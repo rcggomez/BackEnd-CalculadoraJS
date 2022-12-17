@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, black, white);
+}
+
+.contenedor {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculadora {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(187, 130, 130);
+  background-color: rgb(216, 181, 181);
+  /*tema oscuro*/
+}
+.calculadora p {
+  font-size: 15px;
+  color: black;
+}
+.calculadora #display {
+  color: #0a1e23;
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.calculadora #equal {
+  height: 130px;
+}
+.calculadora #clear {
+  background-color: rgb(15, 75, 128);
+  color: rgb(203, 224, 225);
+}
+.calculadora .btn-number {
+  background-color: grey;
+  color: whitesmoke;
+}
+.calculadora .btn-operator {
+  background-color: orange;
+  color: white;
+}
+.calculadora .btn-equal {
+  background-color: gray;
+  color: whitesmoke;
+}
+.calculadora.dark {
+  background-color: rgb(67, 67, 67);
+}
+.calculadora.dark #display {
+  color: whitesmoke;
+}
+.calculadora.dark #clear {
+  background-color: slategrey;
+  color: aliceblue;
+}
+.calculadora.dark p {
+  font-size: 15px;
+  color: rgb(236, 227, 227);
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgb(142, 165, 237);
+  z-index: -1;
+}
+
+.theme-toggler .active {
+  color: black;
+}
+.theme-toggler .active .active::before {
+  background-color: white;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+/*tema oscuro*//*# sourceMappingURL=style.css.map */
